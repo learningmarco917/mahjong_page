@@ -1,0 +1,134 @@
+
+.rule-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 42px;
+  color: #ffd700;
+  margin-bottom: 50px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.rule-card {
+  background: rgba(30, 40, 60, 0.9);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  border: 2px solid #ffd700;
+  transition: transform 0.3s ease;
+}
+
+.rule-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 28px;
+  color: #ffd900f6;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.rule-list {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ecf0f1;
+}
+
+.rule-list li {
+  margin: 15px 0;
+  padding-left: 5px;
+}
+
+.rule-list .sub-item {
+  margin-top: 20px;
+}
+
+.rule-list ul {
+  margin: 12px 0 0 30px;
+  list-style: disc;
+}
+
+.highlight {
+  color: #ff4757;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.penalty-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #ecf0f1;
+}
+
+.penalty-table th,
+.penalty-table td {
+  border: 1px solid #ffd700;
+  padding: 14px;
+  text-align: center;
+}
+
+.penalty-table th {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.penalty-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.penalty-table tr:hover {
+  background: rgba(255, 215, 0, 0.15);
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .rules-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .rule-card {
+    padding: 25px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .rule-list {
+    font-size: 16px;
+  }
+
+  .penalty-table {
+    font-size: 15px;
+  }
+
+  .penalty-table th,
+  .penalty-table td {
+    padding: 10px;
+  }
+}
